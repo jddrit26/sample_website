@@ -10,6 +10,26 @@
   </head>
   <body>
 
+<!-- Here we’ve placed the .nav-menu rule above the .nav-spacing rule,  -->
+<!-- but in this case the order doesn’t matter. (The order of CSS rules -->
+<!-- often does matter, though; the details are covered in Learn Enough -->
+<!-- CSS & Layout to Be Dangerous.) -->
+
+<!-- As a final step, we’ll add the counterpart to a CSS class, called a CSS -->
+<!-- 'identifier', or id (read as separate letters: 'eye-dee'). Adding an    -->
+<!-- id is certainly not necessary, and nor is it considered a good practice -->
+<!-- to use ids for styling (for reasons covered in Learn Enough CSS &       -->
+<!-- Layout to Be Dangerous); we include it here mainly for purposes of      -->
+<!-- illustration. But ids can be quite useful for deep linking (discussed   -->
+<!-- in Section 4.7.3), and they are essential for many JavaScript           -->
+<!-- applications (as covered in Learn Enough JavaScript Be Dangerous).      -->
+
+<!-- In this case, we’ll call the id main-nav (to indicate the main              -->
+<!-- navigational element) and add it to the main navigational div,              -->
+<!-- as shown in Listing 4.21. This has no effect on the page’s appearance,      -->
+<!-- but serves to illustrate the syntax. Note that, unlike classes, which       -->
+<!-- can be used multiple times on a page, a given CSS id can be used only once. -->
+
     <div id="main-nav" class="nav-menu">
       <a href="index.html">Home</a>
       <a href="tags.html" class="nav-spacing">HTML Tags</a>
@@ -44,7 +64,13 @@
       <a href="https://www.learnenough.com/">learnenough.com</a>.
     </p>
 
-    <h2>Founders</h2>
+<!-- One of the simplest and most useful applications of CSS ids is for     -->
+<!-- creating links to arbitrary HTML elements using a convenient hash      -->
+<!-- symbol (#) syntax. By adding the id founders to the 'Founders' h2      -->
+<!-- tag, show that you can visit that section of the page directly by      -->
+<!-- pasting the URL sample_website/index.html#founders into your browser’s -->
+<!-- address bar.                                                           -->
+    <h2 id="founders">Founders</h2>
 
     <p>
       <em><b>Learn Enough to Be Dangerous</em></b> was founded in 2015 by Michael Hartl, Lee
